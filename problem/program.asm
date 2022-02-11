@@ -2,4 +2,43 @@
 // 000421702
 // juan.ferrer@upb.edu.co
 (START)
-    @
+@16384
+D=A
+@1
+M=D
+@1
+D=M
+@2
+M=D
+@24576
+D=M
+@67
+D=D-A
+@27
+D;JEQ
+@2
+D=M
+@24575
+D=D-A
+@4
+D;JGT
+@2
+A=M
+M=-1
+@2
+M=M+1
+@14
+0;JMP
+@2
+D=M
+@24575
+D=D-A
+@4
+D;JGT
+@2
+A=M
+M=0
+@2
+M=M+1
+@27
+0;JMP
